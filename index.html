@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- nextprot-js -->
+    <script src="https://cdn.rawgit.com/calipho-sib/nextprot-js/v0.0.54/dist/nextprot.bundle.js"></script>
+    
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.3/xlsx.full.min.js"></script>
+    <!-- FileSaver saveAs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div id="headerDiv">
+            <div class="logo">
+                <a href="https://www.saavpedia.org/">
+                    <img id="headerLogo" src="src/SAAVpedia_logo.svg" alt="SAAVpedia_logo"/>
+                </a>
+            </div>
+            <div class="logo rightLogo">
+                <a href="https://www.kbsi.re.kr/">
+                    <img id="headerKBSILogo" src="src/KBSI_logo.svg" alt="KBSI_logo"/>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- table div-->
+    <div id="tableDiv">
+        <div id="loading" class="d-flex justify-content-center">
+            <div class="spinner-border" style="width: 2em; height: 2em;" role="status">
+              <span class="sr-only">L-borderoading...</span>
+            </div>
+        </div>
+        <!-- table -->
+        <table id="table-bootstrap">
+        </table>
+
+        <!-- export excel button -->
+        <div id="exportExcelButton">
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <footer>
+        <div id="footer">
+            <div class="logo">
+                <a href="https://www.saavpedia.org/">
+                    <img id="footerLogo" src="src/SAAVPedia.new_.logo_.white_.36pt.svg" alt="SAAVpedia_logo"/>
+                </a>
+            </div>
+            <div class="logo rightLogo">
+                <a href="https://www.kbsi.re.kr/">
+                    <img id="footerKBSILogo" src="src/KBSI.logo_.white_.svg" alt="KBSI_logo"/>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- bootstrap table -->
+    <link href="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/bootstrap-table@1.17.1/dist/bootstrap-table.min.js"></script>
+</body>
+</html>
