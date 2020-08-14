@@ -14,6 +14,7 @@ function makeSearch(uniprotName) {
             // If there is no data in SAAVpedia,
             if (Data.length == 0){
                 noData();
+                $("#loading").remove();
             }
             // else,
             else{
@@ -191,7 +192,7 @@ function makeTable(jsonData){
         }
     ]
     });
-    $("#exportExcelButton").append('<input type="button" id="excelFileExport" class="btn btn-secondary" value="Download xlsx file(JSON)" />');
+    $("#exportExcelButton").append('<input type="button" id="excelFileExport" class="btn btn-secondary" value="Download Excel file(xlsx)" />');
 }
 
 var excelHandler = {
