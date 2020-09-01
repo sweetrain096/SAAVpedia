@@ -27,6 +27,7 @@ div.rightLogo {
     float: right;
 }
 #tableDiv{
+    height: 700px;
     padding:20px;
     overflow: auto;
     margin-bottom: 30px;
@@ -55,4 +56,7 @@ div#footer {
 input.form-control.search-input{
     width: 190px;
     float: right!important;
+}
+.page-item.active .page-link {
+    z-index: 0;
 }
